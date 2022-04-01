@@ -25,4 +25,4 @@ const run = pipe(
   TE.map(C.log('Success !')),
 );
 
-await run();
+run();

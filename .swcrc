@@ -11,7 +11,8 @@
     "target": "es2017"
   },
   "module": {
-    "type": "commonjs"
+    "type": "commonjs",
+    "lazy": true
   },
   "minify": true,
   "sourceMaps": true
