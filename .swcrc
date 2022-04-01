@@ -1,0 +1,18 @@
+{
+  "env": {
+    "targets": {
+      "node": 16
+    }
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "target": "es2017"
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": true,
+  "sourceMaps": true
+}
