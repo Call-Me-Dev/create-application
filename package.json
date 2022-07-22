@@ -2,9 +2,7 @@
   "name": "@callmedev/create-application",
   "version": "1.0.0",
   "type": "module",
-  "bin": {
-    "create-application": ".dist/main.js"
-  },
+  "bin": ".dist/main.js",
   "scripts": {
     "start": "node --experimental-specifier-resolution=node ./.dist/main.js",
     "build": "yarn rimraf .dist/ && swc src/ -d .dist/",
@@ -32,5 +30,6 @@
     "fp-ts": "^2.11.9",
     "got": "^12.0.3",
     "tar": "^6.1.11"
-  }
+  },
+  "packageManager": "yarn@3.2.2"
 }
