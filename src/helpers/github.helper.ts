@@ -9,5 +9,5 @@ export const downloadAndExtractRepository = (destination: string) => (template: 
       got.stream(`https://codeload.github.com/Call-Me-Dev/create-application/tar.gz/main`),
       tar.extract({ cwd: destination, strip: 3 }, [`create-application-main/templates/${template}`])
     ),
-    () => new Error(),
+    (reason: unknown) => new Error(reason as string),
   );
