@@ -5,7 +5,7 @@ import { pipe } from 'fp-ts/function';
 import * as TE from 'fp-ts/TaskEither';
 import { createApplication } from './create-application';
 
-const program = new Command('@callmedev/cli')
+const program = new Command('@callmedev/create-application')
   .version('1.0.0')
   .argument('<project-directory>')
   .usage('<project-directory> [options]')
