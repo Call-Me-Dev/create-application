@@ -3,6 +3,7 @@
 import { Command } from 'commander';
 import { pipe } from 'fp-ts/function';
 import * as TE from 'fp-ts/TaskEither';
+import { error } from './utils/console.util';
 import { createApplication } from './create-application';
 
 const program = new Command('@callmedev/create-application')
@@ -21,6 +22,7 @@ const run = pipe(
   TE.bind('destination', () => TE.of(program.args[0] || '.')),
   TE.bind('template', () => TE.of(program.opts()['template'])),
   TE.chain(createApplication),
+  TE.orElseFirstIOK(error),
 );
 
-await run();
+await run()

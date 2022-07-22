@@ -18,5 +18,5 @@ export const install = (directory: string): TE.TaskEither<Error, void> =>
         resolve();
       });
     }),
-    () => new Error(),
+    (reason: unknown) => new Error(reason as string),
   );

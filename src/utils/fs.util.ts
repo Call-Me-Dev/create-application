@@ -4,5 +4,5 @@ import * as TE from 'fp-ts/TaskEither';
 export const createDirectory = (path: string): TE.TaskEither<Error, void> =>
   TE.tryCatch(
     () => fs.mkdir(path),
-    () => new Error(),
+    (reason: unknown) => new Error(reason as string),
   );
