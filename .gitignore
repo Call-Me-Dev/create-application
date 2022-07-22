@@ -6,6 +6,10 @@ node_modules
 package-lock.json
 yarn.lock
 
+# yarn v2
+.yarn/cache
+.yarn/install-state.gz
+
 # logs
 *.log
 
