@@ -3,9 +3,6 @@
   "version": "1.0.2",
   "type": "module",
   "bin": ".dist/main.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/call-me-dev/"
-  },
   "scripts": {
     "start": "node --experimental-specifier-resolution=node ./.dist/main.js",
     "build": "yarn rimraf .dist/ && swc src/ -d .dist/",

@@ -5,19 +5,14 @@ on:
     types: [created]
 
 jobs:
-  publish-gpr:
+  publish-npm:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          always-auth: true
           node-version: 16
-          registry-url: https://npm.pkg.github.com/call-me-dev/
-      - run: npm publish
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{github.token}}
-
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
