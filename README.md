@@ -1,6 +1,6 @@
-<h1 align="center"> Create Application </h1>
+<h1 align="center"> @call-me-dev/create-application </h1>
 <p align="center">
-  <a href="https://www.npmjs.com/package/@callmedev/create-application">
+  <a href="https://www.npmjs.com/package/@call-me-dev/create-application">
     <img src="https://github.com/marblejs/marble/workflows/Test%20suite/badge.svg" alt="GitHub Actions" status" height="18" />
   </a>
 </p>
@@ -18,11 +18,11 @@ You can create a new application using one of the available [templates](/templat
 ## <a name='quick-start'> Quick Start </a>
 Create your application in a folder called `my-application` using the typescript template.
 ```bash
-npx create-application -t typescript my-application
+npx @call-me-dev/create-application -t typescript my-application
 ```
 
 ## <a name='usage'>Usage</a>
-`create-application` comes with the following options:
+`@call-me-dev/create-application` comes with the following options:
 
 - **-t, --template** - The template to boostrap the application.
 
