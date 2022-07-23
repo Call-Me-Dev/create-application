@@ -1,6 +1,6 @@
 {
   "name": "@call-me-dev/create-application",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "bin": ".dist/main.js",
   "scripts": {
