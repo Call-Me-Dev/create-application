@@ -13,7 +13,7 @@
 
 ## <a name='overview'>Overview</a>
 This CLI tool allow you to easily start building a NodeJS application.
-You can create a new application using one of the available [templates](/templates).
+You can create a new application using one of the available [templates](https://github.com/Call-Me-Dev/create-application/templates).
 
 ## <a name='quick-start'> Quick Start </a>
 Create your application in a folder called `my-application` using the typescript template.
