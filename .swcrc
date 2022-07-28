@@ -5,8 +5,12 @@
     }
   },
   "jsc": {
+    "baseUrl": "./",
     "parser": {
       "syntax": "typescript"
+    },
+    "paths": {
+      "@/*": ["./src/*"]
     },
     "target": "es2017"
   },
