@@ -3,10 +3,10 @@
 import { Command } from 'commander';
 import { pipe } from 'fp-ts/function';
 import * as TE from 'fp-ts/TaskEither';
-import { error } from './utils/console.util';
-import { createApplication } from './create-application';
+import { error } from '@/helpers/console';
+import { createApplication } from '@/core/cli/use-cases';
 
-const program = new Command('@callmedev/create-application')
+const program = new Command('@call-me-dev/create-application')
   .version('1.0.0')
   .argument('<project-directory>')
   .usage('<project-directory> [options]')
